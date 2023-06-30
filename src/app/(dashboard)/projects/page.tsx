@@ -7,7 +7,7 @@ interface pageProps {}
 const page: FC<pageProps> = ({}) => {
   const date = new Date();
   return (
-    <div className="mx-6">
+    <div className="mx-6 mt-3">
       <div className="flex-1">
         <div className="grid grid-cols-3 gap-4">
           <CreateProjectCard />
