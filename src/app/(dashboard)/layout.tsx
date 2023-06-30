@@ -67,7 +67,7 @@ export default async function DashboardLayout({
               </div>
             </div>
           </header>
-          <div>{children}</div>
+          <div className="bg-[#F7F8FA]">{children}</div>
         </main>
       </div>
       {/* <SiteFooter className="border-t" /> */}
