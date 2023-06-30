@@ -24,6 +24,7 @@ import {
   User,
   X,
   PieChart,
+  Search,
   type Icon as LucideIcon,
 } from "lucide-react";
 
@@ -71,4 +72,5 @@ export const Icons = {
   twitter: Twitter,
   check: Check,
   pieChart: PieChart,
+  search: Search,
 };
