@@ -1,5 +1,5 @@
 'use client'
-import styles from "@chatscope/chat-ui-kit-styles/dist/default/styles.min.css";
+// import styles from "@chatscope/chat-ui-kit-styles/dist/default/styles.min.css";
 import {
   MainContainer,
   ChatContainer,
