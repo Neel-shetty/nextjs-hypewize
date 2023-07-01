@@ -6,8 +6,8 @@ export default function Content() {
   return (
     <div>
       <div className="flex flex-row w-full gap-5">
-        <Input placeholder="www.exampleWebsite.com" />
-        <Button className="bg-[#2745FA]">+Add</Button>
+        <Input className="w-[89%]" placeholder="www.exampleWebsite.com" />
+        <Button className="bg-[#2745FA] flex-1">+Add</Button>
       </div>
       {[1, 2, 3].map((item, index) => (
         <div className="bg-white w-full m-2 my-4 p-4" key={index}>

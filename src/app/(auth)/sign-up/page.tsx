@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 
 export default function SignUp() {
@@ -9,9 +8,25 @@ export default function SignUp() {
           <div className="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
             <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
               <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
-                Sign in to your hypewize account
+                Create new account
               </h1>
               <form className="space-y-4 md:space-y-6" action="#">
+                <div>
+                  <label
+                    // for="email"
+                    className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                  >
+                    Your Name
+                  </label>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="your name"
+                    // required=""
+                  ></input>
+                </div>
                 <div>
                   <label
                     // for="email"
@@ -43,7 +58,22 @@ export default function SignUp() {
                     className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                   ></input>
                 </div>
-                <div className="flex items-center justify-between">
+                <div>
+                  <label
+                    // for="password"
+                    className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                  >
+                    Confirm Password
+                  </label>
+                  <input
+                    type="password"
+                    name="confirm-password"
+                    id="confirm-password"
+                    placeholder="••••••••"
+                    className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  ></input>
+                </div>
+                {/* <div className="flex items-center justify-between">
                   <div className="flex items-start">
                     <div className="flex items-center h-5">
                       <input
@@ -65,17 +95,17 @@ export default function SignUp() {
                   >
                     Forgot password?
                   </a>
-                </div>
+                </div> */}
                 <Button variant={"default"} className="bg-[#2745FA] w-full ">
                   Sign In
                 </Button>
                 <p className="text-sm font-light text-gray-500 dark:text-gray-400">
-                  Dont have an account yet?{" "}
+                  Already have an account?{" "}
                   <a
-                    href="#"
+                    href="/sign-in"
                     className="font-medium text-primary-600 hover:underline dark:text-primary-500"
                   >
-                    Sign up
+                    Sign in
                   </a>
                 </p>
               </form>

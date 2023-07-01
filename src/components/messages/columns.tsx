@@ -1,6 +1,7 @@
 "use client";
 
 import { ColumnDef } from "@tanstack/react-table";
+import { format } from "date-fns";
 import { Flag } from "lucide-react";
 
 // This type is used to define the shape of our data.
@@ -19,8 +20,8 @@ export const columns: ColumnDef<Messages>[] = [
     header: "Country",
     cell: ({ row }) => {
       return (
-        <div className="flex items-center">
-          <Flag />;
+        <div className="flex items-center justify-center">
+          <img src={"/flag.png"} />
         </div>
       );
     },
@@ -36,5 +37,20 @@ export const columns: ColumnDef<Messages>[] = [
   {
     accessorKey: "date",
     header: "Date",
+    cell: ({ row }) => {
+      const date: Date = row.getValue("date");
+      return (
+        <div className="flex flex-col items-center justify-center">
+          <p>
+            {format(date, "MMM")}
+            {","}
+            {format(date, "dd")}
+            {","}
+            {format(date, "yyyy")}
+          </p>
+          <p className="text-[#808080] text-xs">{format(date, "p")}</p>
+        </div>
+      );
+    },
   },
 ];
