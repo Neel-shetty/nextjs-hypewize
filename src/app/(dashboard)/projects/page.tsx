@@ -2,9 +2,9 @@
 import { FC, useEffect } from "react";
 import { ProjectCard } from "@/components/project-card";
 import CreateProjectCard from "@/components/create-project-card";
-import { Widget, addResponseMessage } from "react-chat-widget";
+// import { Widget, addResponseMessage } from "react-chat-widget";
 
-import "react-chat-widget/lib/styles.css";
+// import "react-chat-widget/lib/styles.css";
 
 interface pageProps {}
 
@@ -23,11 +23,11 @@ const page: FC<pageProps> = ({}) => {
 
   return (
     <div className="mx-6 mt-3 min-h-screen">
-      <Widget
+      {/* <Widget
         title={"userName"}
         subtitle={"Live Chat"}
         handleNewUserMessage={handleNewUserMessage}
-      />
+      /> */}
       <div className="flex-1">
         <div className="grid grid-cols-1 gap-4 md:grid-cols-3 overflow-auto ">
           <CreateProjectCard />
