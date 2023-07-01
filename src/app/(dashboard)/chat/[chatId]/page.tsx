@@ -14,6 +14,7 @@ export default function Chat() {
       <ChatContainer>
         <MessageList>
           <Message
+          //@ts-ignore
             model={{
               message: "Hello my friend",
               sentTime: "just now",
