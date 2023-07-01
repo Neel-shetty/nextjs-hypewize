@@ -2,8 +2,8 @@ import Message from "@/components/message";
 
 export default function MessagesPage() {
   return (
-    <div className="min-h-screen mx-6 mt-3">
-      <div className="m-5 p-5 rounded-md bg-white">
+    <div className="min-h-screen mx-6 mt-3 ">
+      <div className="md:m-5 md:p-5 rounded-md bg-white">
         <div className=" flex flex-row items-center gap-5">
           <div className="w-14 h-14  bg-gray-200 rounded-full" />
           <div className="text-neutral-900 text-[20px] font-semibold capitalize">

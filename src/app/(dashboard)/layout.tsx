@@ -26,24 +26,12 @@ export default async function DashboardLayout({
 
   return (
     <div className="flex min-h-screen flex-col">
-      {/* <header className="sticky top-0 z-40 border-b bg-background">
-        <div className="container flex h-16 items-center justify-between py-4">
-          <MainNav items={dashboardConfig.mainNav} />
-          <UserAccountNav
-            user={{
-              name: "test name",
-              image: "",
-              email: "test@test.com",
-            }}
-          />
-        </div>
-      </header> */}
       <div className=" w-full grid flex-1  md:grid-cols-[200px_1fr] ">
         <aside className="hidden w-[200px] flex-col md:flex justify-start bg-[#040A27]">
           <DashboardNav items={dashboardConfig.sidebarNav} />
         </aside>
         <main className="flex flex-1 flex-col overflow-hidden">
-          <header className="sticky top-0 z-40 border-b bg-transparent md:bg-white">
+          <header className="md:sticky md:top-0 md:z-40 md:border-b bg-[#F7F8FA] md:bg-white">
             <div className=" px-8 flex h-16 items-center justify-between py-4">
               <MainNav items={dashboardConfig.mainNav} />
               <div className="md:flex flex-row gap-3 items-center justify-between hidden">

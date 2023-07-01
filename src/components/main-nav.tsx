@@ -10,6 +10,7 @@ import { cn } from "@/lib/utils";
 import { Icons } from "@/components/icons";
 import { MobileNav } from "@/components/mobile-nav";
 import { Menu } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 interface MainNavProps {
   items?: MainNavItem[];
@@ -20,6 +21,7 @@ export function MainNav({ items, children }: MainNavProps) {
   const segment = useSelectedLayoutSegment();
   const path = usePathname();
   const [showMobileMenu, setShowMobileMenu] = React.useState<boolean>(false);
+  const navigation = useRouter();
 
   function getPageTitle() {
     const name = path.split("/")[1];
@@ -42,9 +44,12 @@ export function MainNav({ items, children }: MainNavProps) {
       ) : null}
       <button
         className="flex items-center space-x-2 md:hidden"
-        onClick={() => setShowMobileMenu(!showMobileMenu)}
+        onClick={() => {
+          setShowMobileMenu(!showMobileMenu);
+          // navigation.push("/mobile-menu");
+        }}
       >
-        {showMobileMenu ? <Icons.close /> : <Menu/>}
+        {showMobileMenu ? <Icons.close /> : <Menu />}
         {/* <span className="font-bold">Menu</span> */}
       </button>
       {showMobileMenu && items && (
