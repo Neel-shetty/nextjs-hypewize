@@ -1,11 +1,11 @@
 export const siteConfig = {
-  name: "Taxonomy",
+  name: "Hypewize",
   description:
-    "An open source application built using the new router, server components and everything new in Next.js 13.",
-  url: "https://tx.shadcn.com",
-  ogImage: "https://tx.shadcn.com/og.jpg",
+    "GPT-Powered Live Chat, Your Gateway to Productive Communication",
+  url: "",
+  ogImage: "",
   links: {
-    twitter: "https://twitter.com/shadcn",
-    github: "https://github.com/shadcn/taxonomy",
+    twitter: "",
+    github: "",
   },
 };

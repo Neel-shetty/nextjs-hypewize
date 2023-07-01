@@ -7,9 +7,9 @@ interface pageProps {}
 const page: FC<pageProps> = ({}) => {
   const date = new Date();
   return (
-    <div className="mx-6 mt-3 h-screen">
+    <div className="mx-6 mt-3 min-h-screen">
       <div className="flex-1">
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-3 overflow-auto ">
           <CreateProjectCard />
           {[1, 2, 3, 4, 5].map((i) => {
             return (
