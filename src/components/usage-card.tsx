@@ -8,6 +8,7 @@ export default function UsageCard({
 }: {
   title: string;
   description: string;
+  icon?: any;
 }) {
   return (
     <Card className="flex flex-col items-center justify-center w-[240px] p-5">
