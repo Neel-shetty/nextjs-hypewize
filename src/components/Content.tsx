@@ -5,8 +5,8 @@ import { Edit, Trash2 } from "lucide-react";
 export default function Content() {
   return (
     <div>
-      <div className="flex flex-row w-full gap-5">
-        <Input className="w-[89%]" placeholder="www.exampleWebsite.com" />
+      <div className="flex flex-col md:flex-row w-full gap-5">
+        <Input className="w-full md:w-[89%]" placeholder="www.exampleWebsite.com" />
         <Button className="bg-[#2745FA] flex-1">+Add</Button>
       </div>
       {[1, 2, 3].map((item, index) => (

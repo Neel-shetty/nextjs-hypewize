@@ -10,7 +10,7 @@ export default function Info() {
   return (
     <div>
       <p className="font-bold mb-2">Add Website Domain</p>
-      <div className="flex flex-row w-full gap-5">
+      <div className="flex flex-col md:flex-row md:w-full gap-5">
         <Input placeholder="www.exampleWebsite.com" />
         <Button className="bg-[#2745FA]">+Add</Button>
       </div>
@@ -32,8 +32,8 @@ export default function Info() {
           {codeString}
         </SyntaxHighlighter>
       </div>
-      <p className="font-bold mb-2">Agent</p>
-      <div className="flex flex-row w-full gap-5">
+      <p className="font-bold mb-2 mt-5">Agent</p>
+      <div className="flex flex-col md:flex-row w-full gap-5">
         <Input placeholder="Agent name" />
         <Button className="bg-[#2745FA] gap-2">
           <Edit />

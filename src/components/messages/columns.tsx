@@ -3,6 +3,7 @@
 import { ColumnDef } from "@tanstack/react-table";
 import { format } from "date-fns";
 import { Flag } from "lucide-react";
+import { Button } from "../ui/button";
 
 // This type is used to define the shape of our data.
 // You can use a Zod schema here if you want.
@@ -33,6 +34,15 @@ export const columns: ColumnDef<Messages>[] = [
   {
     accessorKey: "details",
     header: "Details",
+    cell: ({ row }) => {
+      const details: string = row.getValue("details");
+      return (
+        <div className="flex items-center justify-center">
+          <div className="hidden md:flex items-start justify-start">{details}</div>
+          <Button className="md:hidden bg-white text-black hover:bg-gray-400">View</Button>
+        </div>
+      );
+    },
   },
   {
     accessorKey: "date",
