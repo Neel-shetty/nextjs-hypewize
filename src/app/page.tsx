@@ -143,7 +143,7 @@ export default function Home() {
             Have any Questions?
           </div>
           <div className="w-full my-5 text-neutral-500 text-[16px] font-normal leading-7">
-            Can't find the answer you're looking for? Chat with us.
+            Cant find the answer youre looking for? Chat with us.
           </div>
           <Link
             href={"/sign-in"}
