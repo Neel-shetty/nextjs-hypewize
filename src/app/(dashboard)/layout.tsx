@@ -43,16 +43,16 @@ export default async function DashboardLayout({
           <DashboardNav items={dashboardConfig.sidebarNav} />
         </aside>
         <main className="flex flex-1 flex-col overflow-hidden">
-          <header className="sticky top-0 z-40 border-b bg-white">
+          <header className="sticky top-0 z-40 border-b bg-transparent md:bg-white">
             <div className=" px-8 flex h-16 items-center justify-between py-4">
               <MainNav items={dashboardConfig.mainNav} />
-              <div className="flex flex-row gap-3 items-center justify-between">
+              <div className="md:flex flex-row gap-3 items-center justify-between hidden">
                 {/* <Search /> */}
                 <div>
                   <Button className="px-0 mx-2" variant={"link"}>
                     <SearchIcon className="black" size={20} />
                   </Button>
-                  <Button className="px-0 mx-2  " variant={"link"}>
+                  <Button className="px-0 mx-2" variant={"link"}>
                     <Bell className="black" size={20} />
                   </Button>
                 </div>

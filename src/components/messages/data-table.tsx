@@ -15,6 +15,8 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
+import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 interface DataTableProps<TData, TValue> {
   columns: ColumnDef<TData, TValue>[];
@@ -31,12 +33,15 @@ export function DataTable<TData, TValue>({
     getCoreRowModel: getCoreRowModel(),
   });
 
+  const navigation = useRouter();
+
   return (
     <div className="rounded-md">
       <Table>
         <TableHeader>
           {table.getHeaderGroups().map((headerGroup) => (
             <TableRow key={headerGroup.id}>
+              {/* <Link href={"/"} key={headerGroup.id}> */}
               {headerGroup.headers.map((header) => {
                 return (
                   <TableHead key={header.id}>
@@ -49,6 +54,7 @@ export function DataTable<TData, TValue>({
                   </TableHead>
                 );
               })}
+              {/* </Link> */}
             </TableRow>
           ))}
         </TableHeader>
@@ -60,11 +66,20 @@ export function DataTable<TData, TValue>({
                 data-state={row.getIsSelected() && "selected"}
               >
                 {row.getVisibleCells().map((cell) => (
-                  <TableCell key={cell.id}>
+                  // <Link href={"/"} key={cell.id}>
+                  <TableCell
+                    className="hover:cursor-pointer"
+                    onClick={() => {
+                      navigation.push("/projects/1/messages/" + cell.row.id);
+                    }}
+                    key={cell.id}
+                  >
                     {flexRender(cell.column.columnDef.cell, cell.getContext())}
                   </TableCell>
+                  // </Link>
                 ))}
               </TableRow>
+              // </Link>
             ))
           ) : (
             <TableRow>
