@@ -21,10 +21,11 @@ export default function Message({
             : "relative h-full align-middle justify-center items-center mt-5"
         }
       >
-        <div className="w-[30.42px] h-[22.55px] bg-blue-600 rounded border border-zinc-200" />
+        {/* <div className="w-[30.42px] h-[22.55px] bg-blue-600 rounded border border-zinc-200" />
         <div className="w-[12.41px] left-[9.73px] top-[2.94px] absolute text-white text-[13.726423263549805px] font-medium capitalize">
           K
-        </div>
+        </div> */}
+        <img src="/message-flag.png" />
       </div>
       {/* </div> */}
       <div
@@ -55,6 +56,19 @@ export default function Message({
             {time}
           </div>
         </div>
+      </div>
+      <div
+        className={
+          align === "right"
+            ? "relative h-full align-middle justify-center items-center mt-5"
+            : "hidden"
+        }
+      >
+        <div className="w-[30.42px] h-[22.55px] bg-blue-600 rounded border border-zinc-200" />
+        <div className="w-[12.41px] left-[9.73px] top-[2.94px] absolute text-white text-[13.726423263549805px] font-medium capitalize">
+          K
+        </div>
+        {/* <img src="/message-flag.png" /> */}
       </div>
     </div>
   );
