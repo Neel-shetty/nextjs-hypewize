@@ -9,7 +9,10 @@ export default function Home() {
         <button className="border-[#DEDEDE] text-[#2745FA] px-5 py-2 border rounded-full">
           Pricing
         </button>
-        <Link href={'/sign-in'} className="bg-[#2745FA] text-white px-5 py-2 rounded-full flex flex-row justify-center items-center gap-3">
+        <Link
+          href={"/sign-in"}
+          className="bg-[#2745FA] text-white px-5 py-2 rounded-full flex flex-row justify-center items-center gap-3"
+        >
           Login
           <MoveRight />
         </Link>
@@ -103,6 +106,99 @@ export default function Home() {
         </div>
         <div className="hidden md:flex md:flex-1">
           <img src="/landing2.png" alt="screenshot" />
+        </div>
+      </div>
+      <div className="h-[200px]"></div>
+      <div className="flex flex-row">
+        <div className="flex-1">
+          <div className="w-full text-indigo-600 text-sm font-semibold leading-7">
+            Build revenue
+          </div>
+          <div className="w-full text-zinc-900 text-4xl font-semibold leading-10">
+            Embed Live Chat Snippet On Your Website
+          </div>
+          <div className="w-full text-neutral-500 text-[18px] font-normal leading-loose">
+            First, make sure that the live chat widget is visible on your
+            website. This is what customers will use to talk to you.
+          </div>
+          <div className="w-full text-neutral-500 text-[16px] font-normal leading-normal">
+            To make it appear, either insert the live chat code snippet into
+            your web page or use special plugins provided by Social Intents for
+            platforms like Shopify, WordPress, Bigcommerce, or Wix.
+          </div>
+        </div>
+        <div className="hidden md:flex md:flex-1">
+          <img src="/html.png" alt="html  " />
+        </div>
+      </div>
+      <div className="h-[200px]"></div>
+      <div className="w-full items-center flex flex-col">
+        <div className="text-zinc-900 text-[48px] font-semibold capitalize leading-10">
+          frequently asked questions.
+        </div>
+      </div>
+      <div className="flex flex-row mt-10">
+        <div className="flex-1">
+          <div className="w-full text-zinc-900 text-[40px] font-semibold leading-10">
+            Have any Questions?
+          </div>
+          <div className="w-full my-5 text-neutral-500 text-[16px] font-normal leading-7">
+            Can't find the answer you're looking for? Chat with us.
+          </div>
+          <Link
+            href={"/sign-in"}
+            className="bg-[#2745FA] w-[30%] text-white px-5 py-2 rounded-full flex flex-row justify-center items-center gap-3"
+          >
+            Chat With Us
+            <MoveRight />
+          </Link>
+        </div>
+        <div className="flex-1">
+          <div className="w-full p-6 my-5 bg-white bg-opacity-0 rounded-2xl shadow flex-col justify-center items-start gap-2 inline-flex">
+            <div className="w-[33full  text-zinc-900 text-[24px] font-semibold leading-7">
+              Who should use Social Intents?
+            </div>
+            <div className="self-stretch pr-[25.52px] py-0.5 justify-start items-center inline-flex">
+              <div className="w-[62full text-neutral-500 text-[20px] font-normal leading-7">
+                Small businesses, entrepreneurs, marketers, and anyone who wants
+                to improve their sales. Especially teams that use Microsoft
+                Teams, Slack, Zoom, or Webex.
+              </div>
+            </div>
+          </div>
+          <div className="w-full p-6 my-5 bg-white bg-opacity-0 rounded-2xl shadow flex-col justify-center items-start gap-2 inline-flex">
+            <div className="w-[33full  text-zinc-900 text-[24px] font-semibold leading-7">
+              Is there a Free Trial?
+            </div>
+            <div className="self-stretch pr-[25.52px] py-0.5 justify-start items-center inline-flex">
+              <div className="w-[62full text-neutral-500 text-[20px] font-normal leading-7">
+                Yes! We offer a 14-Day free pro trial with all the bells and
+                whistles to make sure you love the product. Cancel at any time
+                and there are never any contracts.
+              </div>
+            </div>
+          </div>
+          <div className="w-full p-6 my-5 bg-white bg-opacity-0 rounded-2xl shadow flex-col justify-center items-start gap-2 inline-flex">
+            <div className="w-[33full  text-zinc-900 text-[24px] font-semibold leading-7">
+              Can I use live chat on multiple websites?
+            </div>
+            <div className="self-stretch pr-[25.52px] py-0.5 justify-start items-center inline-flex">
+              <div className="w-[62full text-neutral-500 text-[20px] font-normal leading-7">
+                Yes - absolutely! Each of our plans supports a tiered number of
+                websites. So just pick a plan that fits your needs.
+              </div>
+            </div>
+          </div>
+          <div className="w-full p-6 my-5 bg-white bg-opacity-0 rounded-2xl shadow flex-col justify-center items-start gap-2 inline-flex">
+            <div className="w-[33full  text-zinc-900 text-[24px] font-semibold leading-7">
+              Do I have to sign a contract?
+            </div>
+            <div className="self-stretch pr-[25.52px] py-0.5 justify-start items-center inline-flex">
+              <div className="w-[62full text-neutral-500 text-[20px] font-normal leading-7">
+                No! There are no contracts and you can cancel at any time.
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
