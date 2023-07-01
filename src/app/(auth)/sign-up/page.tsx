@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function SignUp() {
   return (
@@ -99,11 +100,45 @@ export default function SignUp() {
                 <Button variant={"default"} className="bg-[#2745FA] w-full ">
                   Sign Up
                 </Button>
+                <div className="relative">
+                  <div className="absolute inset-0 flex items-center">
+                    <span className="w-full border-t" />
+                  </div>
+                  <div className="relative flex justify-center text-xs uppercase">
+                    <span className="bg-background px-2 text-muted-foreground">
+                      OR
+                    </span>
+                  </div>
+                </div>
+                <button className="px-4 w-full items-center justify-center py-2 border flex gap-2 border-slate-200 rounded-lg text-slate-700 hover:border-slate-400 hover:text-slate-900 hover:shadow transition duration-150">
+                  <img
+                    className="w-6 h-6"
+                    src="https://www.svgrepo.com/show/475656/google-color.svg"
+                    loading="lazy"
+                    alt="google logo"
+                  />
+                  <span>Sign Un with Google</span>
+                </button>
+                <div>
+                  <p className="text-xs text-[#525252]">
+                    By selecting Sign In or Sign in with Google, you agree to
+                    our
+                    <Link href={"/"}>
+                      <span className="text-[#0052FF]"> Terms </span>
+                    </Link>
+                    and have read and acknowledge our{" "}
+                    <Link href={"/"}>
+                      <span className="text-[#0052FF]">
+                        Global Privacy Statement.{" "}
+                      </span>
+                    </Link>
+                  </p>
+                </div>
                 <p className="text-sm font-light text-gray-500 dark:text-gray-400">
                   Already have an account?{" "}
                   <a
                     href="/sign-in"
-                    className="font-medium text-primary-600 hover:underline dark:text-primary-500"
+                    className="font-medium text-[#0052FF] hover:underline dark:text-primary-500"
                   >
                     Sign in
                   </a>
