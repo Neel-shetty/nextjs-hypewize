@@ -97,7 +97,7 @@ export default function SignUp() {
                   </a>
                 </div> */}
                 <Button variant={"default"} className="bg-[#2745FA] w-full ">
-                  Sign In
+                  Sign Up
                 </Button>
                 <p className="text-sm font-light text-gray-500 dark:text-gray-400">
                   Already have an account?{" "}
@@ -105,7 +105,7 @@ export default function SignUp() {
                     href="/sign-in"
                     className="font-medium text-primary-600 hover:underline dark:text-primary-500"
                   >
-                    Sign up
+                    Sign in
                   </a>
                 </p>
               </form>
