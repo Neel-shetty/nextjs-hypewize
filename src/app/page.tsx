@@ -147,7 +147,7 @@ export default function Home() {
           </div>
           <Link
             href={"/sign-in"}
-            className="bg-[#2745FA] md:w-[30%] text-white px-5 py-2 rounded-full flex flex-row justify-center items-center gap-3"
+            className="bg-[#2745FA] w-full md:w-[30%] text-white px-5 py-2 rounded-full flex flex-row justify-center items-center gap-3"
           >
             Chat With Us
             <MoveRight />
