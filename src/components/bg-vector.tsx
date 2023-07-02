@@ -12,7 +12,7 @@ export default function BgVector() {
         <path
           d="M184.735 224.152L229.27 274.347L60 198.7L323.404 224.152L492.94 133.751C494.025 175.522 530.375 243.171 667.092 179.597C837.99 100.13 792.417 30.5959 916.113 73.3862C1015.07 107.618 1024.62 166.608 1017.03 191.823L769.953 154.718L787.535 268.998L323.404 161.023L184.735 224.152Z"
           fill="url(#paint0_linear_1_630)"
-          fill-opacity="0.2"
+          fillOpacity="0.2"
         />
       </g>
       <defs>
@@ -23,7 +23,7 @@ export default function BgVector() {
           width="1079.06"
           height="334.007"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
           <feFlood flood-opacity="0" result="BackgroundImageFix" />
           <feBlend
@@ -45,8 +45,8 @@ export default function BgVector() {
           y2="648.32"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#0052FF" />
-          <stop offset="1" stop-opacity="0.07" />
+          <stop stopColor="#0052FF" />
+          <stop offset="1" stopOpacity="0.07" />
         </linearGradient>
       </defs>
     </svg>
